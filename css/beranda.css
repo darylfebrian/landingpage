@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-color: #10100e;
+}
+
+header{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 93px;
+    width: 100%;
+    position:fixed;
+    transition: 0.6s;
+    z-index: 2;
+} 
+
+
+header.sticky{
+    height: 93px;
+    width: 100%;
+    background: #10100e;
+    box-shadow: 0px 4px 8px rgba(186, 118, 21, 0.2);
+
+}
+
+header .logo{
+    position: relative;
+    text-decoration: none;
+    transition: 0.6s;
+    margin-right: 400px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0px;
+    font-weight: 700;
+    transition: 0.6s;
+}
+
+header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    
+}
+
+header ul li:hover::after{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 848px;
+    background: url(foto/68.jpg);
+    background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #fff;
+}
+
+.nav-boxing{
+    width: 400px;
+    height: 30px
+}
+
+
+
+/* tulisan diatas bg */
+.box-mari-peduli{
+width: 640px;
+height: 410px;
+background: rgba(14, 14, 16, 0.67);
+margin-top: -628px;
+margin-left: 24px;
+}
+
+.judul-peduli{
+    color: #FFF;
+    text-shadow: 0px 0px 25px 0px #000;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 98.5%; /* 63.04px */
+    padding-left: 32px;
+    padding-top: 46px;
+}
+
+.box-isi-peduli{
+    width: 560px;
+    height: 102px;
+    margin-left: 32px;
+    margin-top: 18px;
+}
+
+.isi-peduli{
+    color: #FFF;
+    text-shadow: 0px 0px 24px 0px #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 209.5%; /* 33.52px */
+}
+
+.judul-peduli span{
+    color: #f2b743;
+}
+
+/* button */
+.button-1 button{
+    margin-left: 32px;
+    margin-top: 2rem;
+    color: #F0F8FF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    display: inline-flex;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #f2b743;
+    border-radius: 5rem;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background-color: #f2b743;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.button-1 button::before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #fff;
+    z-index: -1;
+    border: 3px solid #f2b743;
+    border-radius: 52px;
+    border: 1px solid #fff;
+}
+
+.button-1 button:hover, button:focus{
+    color: #f2b743;
+}
+
+.button-1 button:hover::before, button:focus::before{
+    transition: transform 0.7s ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.button-1 button:active{
+    transform: scale(0.9);
+}
+
+
+
+/* Layanan */
+.card-layanan{
+    margin-top: 12px;
+    width: 1126px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layan{
+    height: 100%;
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    /* border: white solid; */
+}
+
+.layan a{
+    color: white;
+    font-size: 90px;
+    padding-top: 22px;
+}
+
+.dampak{
+    margin: auto;
+    margin-top: 268px;
+    width: 1126px;
+    height: 400px;
+    margin-bottom: 64px;
+    position: relative;
+    
+}
+
+.teks1-dampak{
+    color: white;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.teks2-dampak{
+    margin-top: 22px;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.jelas-judul{
+    padding-top: 22px;
+    color: white;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.jelas-isi{
+    color: white;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* end layanan */
+
+/* klien */
+.klien{
+ width: 100%;
+ height: 100%;
+ background-color: #f2b743; 
+ margin-top: 380px;  
+}
+
+.judul-klien{
+    color: white;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.card-klien{
+    width: 1126px;
+    height: 180px;
+    display: flex;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-klien1{
+    width: 1126px;
+    height: 150px;
+    display: flex;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* end klien */
+
+
+.bg-kontak {
+    color: white;
+    width: 1205px;
+    height: 100%;
+    background: #10100e;
+    border-radius: 18px;
+    margin-left: 127px;
+    margin-top: 113px;
+    margin-bottom: 27px;
+    box-shadow: 0px 4px 8px rgba(186, 118, 21, 0.2);
+  
+}
+.kontaknya {
+    padding: 27px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between ;
+}
+.teks-kontak {
+    margin-top: 5x;
+    margin-left: 27px;
+}
+.tk1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.gmaps iframe {
+    border-radius: 18px;
+    height: 350px;
+}
+.isi-kontak {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+.isi-kontak i {
+    color: white;
+    font-size: 24px;
+    margin-right: 27px;
+}
+.isi-kontak p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
